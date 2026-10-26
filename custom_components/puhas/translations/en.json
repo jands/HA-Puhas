@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Puhas",
+        "description": "Log in with your customer number and password for asiointipuhas.fi. On first login the password is the number of your invoice.",
+        "data": {
+          "username": "Customer number",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Re-authenticate",
+        "description": "Enter the new password for customer {username}.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid customer number or password",
+      "cannot_connect": "Could not reach asiointipuhas.fi"
+    },
+    "abort": {
+      "already_configured": "This customer number is already configured",
+      "reauth_successful": "Re-authentication was successful"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Next collection"
+      },
+      "next_collection_text": {
+        "name": "Next collection (text)"
+      }
+    }
+  }
+}

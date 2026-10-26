@@ -1,0 +1,39 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Puhas",
+        "description": "Kirjaudu asiointipuhas.fi-palvelun asiakasnumerolla ja salasanalla. Ensimmäisellä kirjautumiskerralla salasanana toimii laskun numero.",
+        "data": {
+          "username": "Asiakasnumero",
+          "password": "Salasana"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Kirjaudu uudelleen",
+        "description": "Anna asiakkaan {username} uusi salasana.",
+        "data": {
+          "password": "Salasana"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Virheellinen asiakasnumero tai salasana",
+      "cannot_connect": "Yhteys asiointipuhas.fi-palveluun epäonnistui"
+    },
+    "abort": {
+      "already_configured": "Tämä asiakasnumero on jo määritetty",
+      "reauth_successful": "Uudelleenkirjautuminen onnistui"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "next_collection": {
+        "name": "Seuraava tyhjennys"
+      },
+      "next_collection_text": {
+        "name": "Seuraava tyhjennys (teksti)"
+      }
+    }
+  }
+}
